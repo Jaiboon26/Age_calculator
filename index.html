@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <main>
+    <div class="main-app">
+      <div class="input-container">
+        <div class="input-box">
+          <p>DAY</p>
+          <input type="number" maxlength="2" placeholder="DD" id="input-day">
+          <p id="error-text">This field is reqiured</p>
+        </div>
+        <div class="input-box">
+          <p>MONTH</p>
+          <input type="number" maxlength="2" placeholder="MM" id="input-month">
+          <p id="error-text2">This field is reqiured</p>
+        </div>
+        <div class="input-box">
+          <p>YEAR</p>
+          <input type="number" maxlength="4" placeholder="YYYY" id="input-year">
+          <p id="error-text3">This field is reqiured</p>
+        </div>
+        <img src="./assets/images/icon-arrow.svg" alt="arrow-right" id="button-cal">
+      </div>
+      <article class="result">
+        <div class="result-box">
+          <p class="result-text" id="result-year">--</p> <p>years</p>
+        </div>
+        <div class="result-box">
+          <p class="result-text" id="result-month">--</p> <p>months</p>
+        </div>
+        <div class="result-box">
+          <p class="result-text" id="result-day">--</p> <p>days</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

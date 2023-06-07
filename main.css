@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(0, 1%, 44%);
+}
+
+html,body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    background: hsl(0,0%,94%);
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 840px;
+    height: 600px;
+    background: hsl(0, 0%, 100%);
+    border-radius: 25px;
+    border-bottom-right-radius: 200px;
+    padding: 55px 60px;
+    min-width: 842px;
+}
+
+.input-container {
+    display: flex;
+    gap: 30px;
+    position: relative;
+    height: 150px;
+}
+
+.input-container::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: hsl(0, 0%, 86%);
+    bottom: 0;
+}
+
+.input-container img {
+    position: absolute;
+    background: hsl(259, 100%, 65%);
+    border-radius: 100%;
+    padding: 25px;
+    height: 100px;
+    width: 100px;
+    bottom: -50px;
+    right: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.input-container img:hover {
+    background: #000;
+}
+
+.input-container .input-box p {
+    letter-spacing: 3px;
+}
+
+.input-container .input-box input {
+    height: 70px;
+    width: 160px;
+    border-radius: 7px;
+    border: 1px solid hsl(0, 0%, 86%);
+    margin-top: 5px;
+    font-size: 32px;
+    color: #000;
+    padding: 20px;
+    transition: all .25s ease;
+}
+
+#error-text,
+#error-text2,
+#error-text3 {
+    display: none;
+    margin-top: 5px;
+    color: red;
+    font-size: 12px;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+.input-container .input-box input:focus {
+    outline: 1px solid hsl(259, 100%, 65%);
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.result .result-box {
+    display: flex;
+}
+
+.result p {
+    font-weight: 800;
+    font-style: italic;
+    font-size: 90px;
+    color: #000;
+    margin-top: -30px;
+}
+
+.result .result-box .result-text {
+    letter-spacing: 20px;
+    color: hsl(259, 100%, 65%);
+}
+
+@media screen and (max-width:850px) {
+    body {
+        transform: scale(0.8);
+    }
+    
+}
+
+@media screen and (max-width:650px) {
+    body {
+        transform: scale(0.6);
+    }
+    
+}
+
+@media screen and (max-width:400px) {
+    main {
+        width: 375px;
+        height: auto;
+        padding: 2rem;
+        min-width: 375px;
+        border-bottom-right-radius: 20%;
+    }
+    .input-container {
+        display: flex;
+        gap: 15px;
+        position: relative;
+        height: 150px;
+        margin-top: 2rem;
+    }
+    .input-container img {
+        bottom: -35px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 75px;
+        width: 75px;
+        padding: 1rem;
+    }
+    .input-container::after {
+        width: 100%;
+    }
+    .main-app {
+        width: 100%;
+    }
+    .input-container .input-box p {
+        letter-spacing: 3px;
+    }
+    
+    .input-container .input-box input {
+        height: 60px;
+        width: 90px;
+        border-radius: 7px;
+        border: 1px solid hsl(0, 0%, 86%);
+        font-size: 18px;
+        color: #000;
+        padding: 20px;
+        transition: all .25s ease;
+    }
+    .result p {
+        font-size: 50px;
+    }
+    .result {
+        margin-top: 7rem;
+        margin-bottom: 3rem;
+    }
+}
+
+
+
+/* 842 , 657 */
